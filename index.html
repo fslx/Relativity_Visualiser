@@ -6,20 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relativity theory Visualized</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.svg" />
     <script src="main.js" defer></script>
 </head>
 
 <body>
-    <h1>
-        Einstein's Theories on Relativity visualised with HTML,CSS & JavaScript
-        <h3>Made for learning about abstract and difficult scientific concepts</h3>
-    </h1>
+    <section class="relativity">
+        <h1>
+            Einstein's Theories on Relativity visualised with HTML,CSS & JavaScript
+            <h3>Made for learning about abstract and difficult scientific concepts</h3>
+        </h1>
 
-    <div class="visualization">
-        <div class="object" id="object"></div>
-        <input type="range" min="0" max="99" value="0" id="speed-slider">
-        <p>Speed: <span id="speed-value">0</span>% of light</span></p>
-    </div>
+        <div class="visualization">
+            <div class="object" id="object"></div>
+            <input type="range" min="0" max="99" value="0" id="speed-slider">
+            <p>Speed: <span id="speed-value">0</span>% of light</span></p>
+        </div>
+    </section>
+
+    <section class="newton-first-styling">
+        <h1>
+            Newton's first law
+        </h1>
+        <div class="visualization">
+            <div class="object" id="newton-first-object">
+                <button id="newton-first-btn">Apply force</button>
+            </div>
+        </div>
+    </section>
+
+    <button id="reset">Reset</button>
+
+    <section>
+        <h1>Newton's second law</h1>
+        <div class="visualization">
+            <div class="object" id="newton-second-object">
+                <input type="range" min="1" max="10" value="1" id="newton-second-mass-slider">
+                <p>Mass: <span id="newton-second-mass-value">1 kg</span></p>
+                <button id="newton-second-btn">Apply force</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h1>
+            Schrödingers Wave Equation
+        </h1>
+        <p>Using HTML5 Canvas for visualization</p>
+        <canvas id="schrodinger-canvas" width="600" height="400"></canvas>
+    </section>
 </body>
 
 </html>
